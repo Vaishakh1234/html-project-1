@@ -36,9 +36,13 @@ body{
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 li{
     list-style: none;
+}
+button{
+    cursor: pointer;
 }
 
 header{
@@ -65,13 +69,28 @@ header{
 .navLinks{
     display: flex;
     align-items: center;
-  
-    gap: 16px;
+    gap: 22Px;
 }
+
 .navLinks li a{
     font-size: 14px;
     font-weight: 700;
     color: var(--secondaryText);
+}
+
+
+.navLinks li:after{
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 0%;
+    border-radius: 5px;
+    background-color: var(--primaryText);
+    transition: all .3s ease-in;
+}
+.navLinks li:hover::after{
+    width: 100%;
+
 }
 .navBtns{
     display: flex;
@@ -170,6 +189,7 @@ border-radius: 8px;
 border: none;
 width: 220px;
 color: var(--secondaryColor);
+letter-spacing: .4px;
 
 }
 .homeBtns .btnOne{
@@ -179,11 +199,15 @@ color: var(--secondaryColor);
     color: var(--primaryColor);
     border:2px solid var(--primaryColor);
     background-color: transparent;
-}
+    position: relative;
+} 
 .homeBtns .btnTwo:hover{
     color: var(--secondaryColor);
     background-color: var(--primaryColor);
 }
+
+
+
 .homeRight
 {
    max-width: 100%;
@@ -228,6 +252,12 @@ color: var(--secondaryColor);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.productOne .logoBox:hover{
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    font-size: 24px;
+  
 }
 .productOne .productTitle{
     color: var(--primaryText);
@@ -311,10 +341,43 @@ font-size: 14px;
 font-weight: 700;
 line-height: 24px;
 color: var(--primaryColor);
-transition: 2s ease;
+position: relative;
+display: block;
+padding: 6px 10px;
+width: fit-content;
 
 }
+.aboutRight .aboutLink::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: 0;
+            height: 0;
+            background: transparent;
+            border: 2px solid transparent;
+}
+.aboutRight .aboutLink:hover::before {
+            animation: animate 1s linear forwards;
+}
 
+
+.aboutRight .aboutLink::after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: 0;
+            height: 0;
+            background: transparent;
+            border: 2px solid transparent;
+        }
+
+        .aboutRight .aboutLink:hover::after {
+            animation: animates 1s linear forwards;
+        }
+
+      
 
 /* courses */
 .coursesSection{
@@ -403,7 +466,7 @@ color: var(--secondaryText);
     text-align: center;
     align-items: center ;
 }
-.coursesImgBox .iconBox .icon{
+.coursesImgBox .iconBox .iconDiv{
     background-color: var(--secondaryColor);
     border-radius: 50%;
     width: 30px;
@@ -413,7 +476,23 @@ color: var(--secondaryText);
     text-align: center;
     align-items: center ;
     font-size: 14px;
+    color: var(--primaryText);
 }
+.coursesImgBox .iconBox .iconDiv .icon{
+    display: block;
+}
+.coursesImgBox .iconBox .iconDiv .iconFill{
+   display: none;
+}
+
+.coursesImgBox .iconBox .iconDiv:hover .icon{
+    display: none;
+}
+.coursesImgBox .iconBox .iconDiv:hover .iconFill{
+    display: block;
+}
+
+
 .coursesContentBox{
     display: flex;
     gap: 18px;
@@ -476,6 +555,7 @@ display: flex;
 color: var(--primaryColor);
 
 
+
 }
 .coursesContentBox .contentBtn{
     color: var(--primaryColor);
@@ -485,6 +565,11 @@ color: var(--primaryColor);
     font-size: 16px;
     font-weight: 700;
     background-color: var(--secondaryColor);
+    transition: all ease-in .2s;
+}
+.coursesContentBox .contentBtn:hover{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
 }
 
 /* pricing */
@@ -536,7 +621,25 @@ color: var(--secondaryText);
     max-width: 320px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding: 60px ;
+    position: relative;
 }
+.pricingCard .newTag{
+    background-color: var(--underlineColor);
+    color: var(--secondaryColor);
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
 .pricingIcon{
     background-color: var(--pricingColor);
     width: 96px;
@@ -582,15 +685,18 @@ font-weight: 400;
 
 }
 .pricingBtn{
-color: var(--primaryColor);
+color: var(--secondaryColor);
 font-size: 14px;
 font-weight: 700;
 background-color: var(--primaryColor);
 padding: 15px 40px 15px 40px;
 border-radius: 5px ;
 border: none;
-color: var(--secondaryColor);
+transition: all .3s ease-in;
+}
 
+.pricingBtn:hover{
+background-color: rgb(120, 76, 254);
 
 }
 .pricingItems{
@@ -821,7 +927,7 @@ margin-top: 10px;
 .footerIcons{
     display: flex;
     justify-content: start;
-    gap: 14px;
+    gap: 18px;
     color: var(--primaryColor);
     margin: 13px 0px;
     margin-top: 22px;
@@ -841,3 +947,66 @@ color: var(--secondaryText);
 word-spacing: 3px;
 
 }
+
+
+
+/* animatio for  button in the about sesction */
+
+  @keyframes animates {
+            0% {
+                width: 0;
+                height: 0;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                border-left-color: bvar(--primaryColor)lack;
+            }
+
+            50% {
+                width: 0;
+                height: 100%;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: var(--primaryColor);
+                border-left-color: var(--primaryColor);
+            }
+
+            100% {
+                width: 100%;
+                height: 100%;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: var(--primaryColor);
+                border-left-color: var(--primaryColor);
+            }
+        }
+    
+        @keyframes animate {
+            0% {
+                width: 0;
+                height: 0;
+                border-top-color: var(--primaryColor);
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+            }
+
+            50% {
+                width: 100%;
+                height: 0;
+                border-top-color: var(--primaryColor);
+                border-right-color: var(--primaryColor);
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+            }
+
+            100% {
+                width: 100%;
+                height: 100%;
+                border-top-color: var(--primaryColor);
+                border-right-color: var(--primaryColor);
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+            }
+        }
+        /* // animation */
