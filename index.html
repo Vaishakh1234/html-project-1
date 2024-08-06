@@ -6,6 +6,7 @@
     <title>project-1</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,18 +26,26 @@
                 <div class="navLeft">
                     <h3 class="navLogo">BrandName</h3>
                 </div>
-                <div class="navRight">
-                    <div class="navLinks">
+
+                <input type="checkbox" name="hamBtnInp" id="hamBtnInp">
+                <label class="hamBtn" for="hamBtnInp"> 
+                     <i id="openBtn" class="fa-solid fa-bars"></i>
+                     <i id="closeBtn" class="fa-solid fa-xmark"></i>
+                 </label>
+                <div class="navRight">                  
+                    <ul class="navLinks">
                         <li> <a href="#">Home</a></li>
                         <li> <a href="#">Product</a></li>
                         <li> <a href="#">pricing</a></li>
                         <li> <a href="#">Contact</a></li>
-                    </div>
+                    </ul>
                     <div class="navBtns">
                         <a href="#" class="loginLink">Login</a>
                         <button>Join us <i class="fa-solid fa-arrow-right"></i> </button>
                     </div>
+                   
                 </div>
+              
              </nav>
            </div>
          </header>
@@ -278,18 +287,21 @@
                     <div class="coursesImgBox">
                         <p class="saleTag">sale</p>
                         <img src="./images/product-cover-4.png" alt="">
-                        <div class="iconBox">
+                         <div class="iconBox">
                            
                             <div class="iconDiv">
-                             <i class="icon fa-regular fa-heart"></i>
+                              <i class="icon fa-regular fa-heart"></i>
+                              <i class="iconFill fa-solid fa-heart"></i>
                             </div>
 
                             <div class="iconDiv">
-                                  <i class="fa-regular fa-bag-shopping"></i>
+                                  <i class="icon fa-regular fa-bag-shopping"></i>
+                                  <i class="iconFill fa-solid fa-bag-shopping"></i>
                             </div>
 
                             <div class="iconDiv">
                                <i class="icon fa-regular fa-eye"></i>
+                               <i class="iconFill fa-solid fa-eye"></i>
                             </div>
                            
                         </div>
@@ -367,6 +379,7 @@
                                         <i class="fa-solid fa-circle-check"></i>
                                         <span>Unlimited product updates</span>
                                     </li>
+           
                                     <li class="pricingItem">
                                         <i class="fa-solid fa-circle-check"></i>
                                         <span>Unlimited product updates</span>

@@ -1,0 +1,540 @@
+@media only screen and (max-width: 1025px) {
+
+.container{
+     width: 800px;
+}
+
+.headdingTag{
+  font-size: 14px;
+  margin-bottom: -10px;
+
+}
+.headding{
+font-size: 44px;
+}
+.homeBtns button{
+
+width: 180px;
+
+}
+/* product */
+
+
+.productOne{
+    max-width: 240px;
+    gap: 16px;
+    padding: 16px 20px;
+
+}
+.productOne .logoBox{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+.productOne .logoBox:hover{
+    font-size: 22px;
+  
+}
+.productOne .productDescription{
+font-size: 12px;
+font-weight: 500;
+
+}
+
+/* about */
+
+.aboutSection{
+    padding: 100px 0px;
+}
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.aboutRight .aboutTitle{
+  font-size: 38px;
+}
+
+/* courses */
+
+.coursesTop .coursesTitle{
+  font-size: 38px;
+}
+
+.courseCard{
+    max-width: 168px;
+  
+}
+.coursesImgBox .iconBox{
+    gap: 15px;
+    bottom: 10px;
+}
+
+.coursesContentBox{
+    gap: 18px;
+    padding: 20px 6px;
+}
+
+.coursesContentBox .contentOne .rating{
+    font-size: 10px;
+    font-weight: 500;
+
+}
+.coursesContentBox .contentTwo{
+font-size: 16px;
+font-weight: 800;
+
+}
+.coursesContentBox .contentThree{
+font-size: 12px;
+
+}
+.coursesContentBox .contentFour{
+font-size: 12px;
+
+}
+.coursesContentBox .contentFive{
+font-size: 12px;
+
+}
+
+.coursesContentBox .contentSix{
+font-size: 10px;
+font-weight: 700;
+
+}
+.coursesContentBox .contentBtn{
+    
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+/* pricing */
+
+.pricingSection{
+    padding: 60px 0px;
+}
+
+
+.pricingCard{
+    gap: 20px;
+    max-width: 320px;
+    padding: 20px 15px ;
+}
+.pricingCard .newTag{
+    font-size: 14px;
+    width: 60px;
+    height: 60px;
+}
+
+.pricingIcon{
+    width: 70px;
+    height: 70px;
+}
+.pricingIcon i{
+    font-size: 30px;
+}
+.pricingPayment{
+font-size: 22px;
+}
+
+.pricingPrice{
+font-size: 36px;
+
+}
+
+.pricingContent{
+  font-size: 12px;
+}
+
+.pricingItem i{
+    font-size: 18px;
+ 
+}
+
+/* review */
+
+.reviewSection{
+    padding: 60px 0px;
+}
+.review{
+    gap: 20px;
+}
+.reviewTitle{
+font-size: 36px;
+}
+.reviewDescription{
+font-weight: 500;
+}
+.reviewBottom{
+    padding-top: 10px; 
+}
+.reviewCard{
+    gap:16px;
+}
+/* email */
+
+
+.emailSection{
+    padding: 60px;
+}
+
+.emailTitle{
+font-size: 38px;
+
+}
+.emailDescription{
+font-weight: 500;
+
+}
+
+.emailInp{
+    width: 500px;
+}
+
+
+/* footer */
+
+.footerTitle{
+font-size: 16px;
+}
+
+.footerIcons{
+    gap: 14px;
+
+}
+
+.subFooterContent{
+font-size: 12px;
+
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+.container{
+     width: 640px;
+}
+
+/* hamburger menu */
+.navRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    bottom: 0;
+    left: -1000px;
+    right: 0;
+    z-index: 2;
+    transition: all .3s ease-in;
+   
+}
+.navRight .navLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navBtns{
+    flex-direction: column;
+    gap: 30px;
+}
+.hamBtn #openBtn{
+    display: block;
+    
+}
+
+ 
+#hamBtnInp:checked ~ .navRight {
+       left: 0px;
+}
+#hamBtnInp:checked ~ .hamBtn #closeBtn {
+        display: block;
+}
+#hamBtnInp:checked ~ .hamBtn #openBtn {
+        display: none;
+
+}
+/* hamburger menu */
+
+/* home */
+
+.homeLeft{
+   text-align: center;
+   align-items: center;
+}
+
+.homeRight {
+   display: none;
+}
+
+.headding{
+  font-size: 50px;
+  font-weight: 700;
+}
+.homeBtns button{
+
+   width: 170px;
+
+}
+
+/* product */
+
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+   
+}
+
+.productOne{
+    max-width: 100%;
+    gap: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    align-items: center;
+
+}
+.productOne .productTitle{
+    font-size: 18px;
+}
+.productOne .logoBox{
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+}
+.productOne .logoBox:hover{
+    font-size: 24px;
+  
+}
+.productOne .productDescription{
+font-size: 14px;
+max-width: 70%;
+text-align: center;
+}
+
+/* about */
+
+.aboutSection{
+    padding: 60px 0px;
+}
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:    50px;
+    text-align: center;
+
+}
+.aboutRight{
+    text-align: center;
+    align-items: center;
+}
+
+
+/* courses */
+
+
+.coursesBottom{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+
+
+/* pricing */
+
+.pricingTop{
+  align-items: center;
+  text-align: center;
+}
+
+.pricingBottom{
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.pricingCard{
+    padding: 30px ;
+}
+
+.pricingIcon{
+    width: 96px;
+    height: 96px;
+}
+
+
+
+/* review */
+
+.review{
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+.reviewTitle{
+font-size: 36px;
+}
+.reviewDescription{
+font-weight: 500;
+}
+.reviewBottom{
+    padding-top: 10px; 
+    flex-direction: column;
+    gap: 20px;
+}
+.reviewCard{
+    gap:16px;
+}
+/* email */
+
+.email{
+    gap: 40px;
+}
+.emailSection{
+    padding: 60px;
+}
+
+.emailTitle{
+font-size: 34px;
+
+}
+.emailDescription{
+font-weight: 500;
+
+}
+
+.emailInp{
+    width: 100%;
+}
+.emailBtn{
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* footer */
+
+.footerSection{
+    padding: 30px 0px;
+}
+.footerTitle{
+font-size: 16px;
+}
+
+.footerIcons{
+    gap: 14px;
+
+}
+
+.subFooterContent{
+font-size: 12px;
+
+}
+
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  .container{
+    width: 100%;
+    padding: 0px 30px;
+  }
+ 
+  .coursesSection{
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+   width: 100%;
+   
+}
+.courses{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 100%;
+  
+    
+}
+.coursesTop{
+    text-align: center;
+    align-items: center;
+}
+.coursesTop .coursesTag{
+font-size: 12px;
+
+}
+.coursesTop .coursesTitle{
+font-size: 30px;
+text-align: center;
+
+}
+.coursesTop .coursesDescription{
+font-size: 13px;
+text-align: center;
+font-weight: 500;
+
+
+}
+.coursesBottom{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+.courseCard{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coursesContentBox{
+    padding: 30px 0px;
+}
+
+.coursesContentBox .contentOne .lang{
+    font-size: 12px;
+}
+
+
+
+.coursesContentBox .contentSix{
+font-size: 10px;
+}
+
+
+ .footer{
+    flex-direction: column;
+    align-items: start;
+  }
+
+
+}
+
