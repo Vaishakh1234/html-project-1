@@ -3,7 +3,13 @@
 .container{
      width: 800px;
 }
-
+.nav{
+    gap: 10px;
+}
+.navLinks{
+   gap: 20px;
+    
+}
 .headdingTag{
   font-size: 14px;
   margin-bottom: -10px;
@@ -231,13 +237,14 @@ font-size: 12px;
     justify-content: center;
     gap: 30px;
     position: fixed;
-    top: 0;
-    background-color: white;
-    bottom: 0;
-    left: -1000px;
-    right: 0;
+    top: 0px;
+    background-color: var(--secondaryColor);
+    /* bottom: 0; */
+    right: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     z-index: 2;
-    transition: all .3s ease-in;
+    transition: all .5s ease-in;
+    padding: 40px 0px;
    
 }
 .navRight .navLinks{
@@ -245,7 +252,9 @@ font-size: 12px;
     flex-direction: column;
     gap: 30px;
 }
-
+.navcloseBtn{
+     display: block !important;
+}
 .navBtns{
     flex-direction: column;
     gap: 30px;
@@ -257,7 +266,7 @@ font-size: 12px;
 
  
 #hamBtnInp:checked ~ .navRight {
-       left: 0px;
+      left: 0px;
 }
 #hamBtnInp:checked ~ .hamBtn #closeBtn {
         display: block;
@@ -267,6 +276,12 @@ font-size: 12px;
 
 }
 /* hamburger menu */
+/* dropdown */
+
+.dropdown{
+     top: 84px;
+     left: 100px;
+}
 
 /* home */
 
@@ -571,7 +586,7 @@ line-height: 20px;
 }
 
 .emailInp{
-    padding:1px    ;
+    padding:13px    ;
     width: 100%;
 }
 

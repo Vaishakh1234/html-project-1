@@ -30,14 +30,25 @@
                 <input type="checkbox" name="hamBtnInp" id="hamBtnInp">
                 <label class="hamBtn" for="hamBtnInp"> 
                      <i id="openBtn" class="fa-solid fa-bars"></i>
-                     <i id="closeBtn" class="fa-solid fa-xmark"></i>
+                     
                  </label>
-                <div class="navRight">                  
+                <div class="navRight">            
+                    <label  for="hamBtnInp"> 
+                        <i id="closeBtn" class=" navcloseBtn fa-solid fa-xmark"></i>
+                    </label>
                     <ul class="navLinks">
-                        <li> <a href="#">Home</a></li>
-                        <li> <a href="#">Product</a></li>
-                        <li> <a href="#">pricing</a></li>
-                        <li> <a href="#">Contact</a></li>
+                        <li class="navLink"> <a href="#">Home</a></li>
+                        <li  class="navLink "> 
+                            <a class="dropdownMenu" href="#">Product <i class="dropdownIcon fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li class="dropdownItem">one</li>
+                                <li class="dropdownItem">Two</li>
+                                <li class="dropdownItem">Three</li>
+                                <li class="dropdownItem">Four</li>
+                            </ul>
+                        </li>
+                        <li class="navLink"> <a href="#">pricing</a></li>
+                        <li class="navLink"> <a href="#">Contact</a></li>
                     </ul>
                     <div class="navBtns">
                         <a href="#" class="loginLink">Login</a>
@@ -555,24 +566,24 @@
                         </div>
                         <div class="col1">
                             <h3 class="footerTitle">Company info </h3>
-                             <p class="footerCaption">About us</p>
-                             <p class="footerCaption">Carrier</p>
-                             <p class="footerCaption">We are hiring</p>
-                             <p class="footerCaption">Blog</p>
+                             <a  class="footerCaption">About us</a>
+                             <a class="footerCaption">Carrier</a>
+                             <a class="footerCaption">We are hiring</a>
+                             <a class="footerCaption">Blog</a>
                         </div>
                         <div class="col1">
                             <h3 class="footerTitle">Features </h3>
-                              <p class="footerCaption">Business Marketing</p>
-                             <p class="footerCaption">User Analytic</p>
-                             <p class="footerCaption">Live Chat</p>
-                             <p class="footerCaption">Unlimited Support</p>
+                              <a class="footerCaption">Business Marketing</a>
+                             <a class="footerCaption">User Analytic</a>
+                             <a class="footerCaption">Live Chat</a>
+                             <a class="footerCaption">Unlimited Support</a>
                         </div>
                         <div class="col1">
                             <h3 class="footerTitle">Resources </h3>
-                             <p class="footerCaption">IOS & Android</p>
-                             <p class="footerCaption">Watch a Demo</p>
-                             <p class="footerCaption">Customers</p>
-                             <p class="footerCaption">API</p>
+                             <a class="footerCaption">IOS & Android</a>
+                             <a class="footerCaption">Watch a Demo</a>
+                             <a class="footerCaption">Customers</a>
+                             <a class="footerCaption">API</a>
                         </div>
                     </div>
                     </div>

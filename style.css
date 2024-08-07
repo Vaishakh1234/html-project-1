@@ -68,6 +68,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    position: relative;
 }
 
 .nav #hamBtnInp {
@@ -83,32 +84,90 @@ header{
     top: 0px;
 }
 
+.navcloseBtn{
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none !important;
+}
+
 .navLinks{
     display: flex;
     align-items: center;
-    gap: 22Px;
+    gap: 30Px;
+    position: relative;
+   
+    
+}
+.navLink{
+     height: 40px;
+     display: flex;
+     align-items: center;
+}
+.dropdown{
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: absolute;
+    margin: auto;
+    display: none;
+    background-color: var(--secondaryColor);
+    top: 34px;
+    left: 120px;
+    cursor: pointer;
+
+}
+.dropdownMenu{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 8px   ;
+    width: 100px;
+}
+.dropdownItem{
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 3;
+    color: var(--secondaryText);
+    padding: 10px 25px;
+}
+.dropdownItem:hover{
+   background-color: rgba(0, 0, 0, 0.132);
+   width: 100%;
 }
 
-.navLinks li a{
+.navLink:hover .dropdown{
+    display: block;
+}
+
+.navLink:hover .dropdownIcon{
+     transform:rotate(180deg);
+     position: relative;
+     top: 5px;
+}
+
+.navLinks .navLink a{
     font-size: 14px;
     font-weight: 700;
     color: var(--secondaryText);
 }
 
 
-.navLinks li:after{
+/* .navLinks .navLink:after{
     content: " ";
     display: block;
-    height: 2px;
+    min-height: 2px;
     width: 0%;
+    margin: auto;
     border-radius: 5px;
     background-color: var(--primaryText);
     transition: all .3s ease-in;
 }
-.navLinks li:hover::after{
+.navLinks .navLink:hover::after{
     width: 100%;
+    max-width: 80px;
 
-}
+} */
 .navBtns{
     display: flex;
     align-items: center;
@@ -946,7 +1005,7 @@ font-weight: 700;
 margin-bottom: 20px;
 
 }
-.footer .col1 p{
+.footer .col1 .footerCaption{
 font-size: 12px;
 font-weight: 600;
 color: var(--secondaryText);
