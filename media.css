@@ -179,7 +179,7 @@ font-weight: 500;
 
 
 .emailSection{
-    padding: 60px;
+    padding: 60px 0px;
 }
 
 .emailTitle{
@@ -411,7 +411,7 @@ font-weight: 500;
     gap: 40px;
 }
 .emailSection{
-    padding: 60px;
+    padding: 60px 0px;
 }
 
 .emailTitle{
@@ -464,7 +464,27 @@ font-size: 12px;
     width: 100%;
     padding: 0px 30px;
   }
- 
+ .headdingTag{
+  font-size: 14px;
+  margin-bottom: -5px;
+
+}
+.headding{
+font-size: 40px;
+font-weight: 800;
+}
+.subHeadding{
+font-size: 14px;
+font-weight: 600;
+text-align: left;
+max-width: 260px;
+
+}
+.homeBtns button{
+font-size: 12px;
+width: 140px;
+
+}
   .coursesSection{
    display: flex;
    justify-content: center;
@@ -477,7 +497,7 @@ font-size: 12px;
     flex-direction: column;
     gap: 50px;
     max-width: 100%;
-  
+    border: 1px solid;
     
 }
 .coursesTop{
@@ -501,18 +521,18 @@ font-weight: 500;
 
 }
 .coursesBottom{
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+   
 
 }
 .courseCard{
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
+    max-width: 500px;
+  
 }
 
 .coursesContentBox{
@@ -528,13 +548,44 @@ font-weight: 500;
 .coursesContentBox .contentSix{
 font-size: 10px;
 }
+.pricingCard{
+    padding: 30px ;
+    align-items: center;
+}
+.email{
+    gap: 40px;
+  
+}
 
 
- .footer{
+.emailTitle{
+font-size: 30px;
+
+}
+.emailDescription{
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+
+}
+
+.emailInp{
+    padding:13px    ;
+    width: 100%;
+}
+
+
+
+.footer{
     flex-direction: column;
     align-items: start;
-  }
+}
 
+.subFooterContent{
+   font-size: 10px;
+   font-weight: 500;
+
+}
 
 }
 
