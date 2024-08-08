@@ -27,11 +27,9 @@ body{
     background-color: var(--bgColor);
 }
 .container{
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1000px;
     padding: 0px 20px ;
+    margin: 0px auto;
    
     
 }
@@ -51,8 +49,6 @@ header{
     width: 100%;
     padding: 30px 0px;
     background-color: var(--secondaryColor);
-    display: flex;
-    justify-content: center;
 }
 .nav{
     width: 100%;
@@ -186,7 +182,7 @@ header{
     color: var(--primaryColor);
 
 }
-.navBtns button{
+.navBtns .navBtn{
     padding:14px 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -207,15 +203,12 @@ header{
 /* home */
 .homeSection{
    background: var(--primaryBg);
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   max-width: 100%;
    padding: 50px 0px;
 
 }
 .home{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,15 +280,13 @@ letter-spacing: .4px;
 /* product */
 
 .productSection{
-    width: 100%;
+    max-width: 100%;
     padding: 50px 0px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+   
 
 }
 .products{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -353,15 +344,12 @@ color: var(--secondaryText);
 /* about */
 
 .aboutSection{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
     padding: 160px 0px;
     
 }
 .about{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -449,10 +437,8 @@ width: fit-content;
 
 /* courses */
 .coursesSection{
-   display: flex;
-   justify-content: center;
-   align-items: center;  
-   width: 100%;
+
+   max-width: 100%;
    
 }
 .courses{
@@ -647,9 +633,6 @@ color: var(--primaryColor);
 
 .pricingSection{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 100px 0px;
 }
 .pricing{
@@ -817,9 +800,6 @@ color: var(--primaryText);
 
 .reviewSection{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 100px 0px;
 }
 .review{
@@ -915,9 +895,6 @@ font-weight: 700;
 
 .emailSection{
     max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 100px 0px;
     background-color: var(--secondaryBg);
 }
@@ -976,9 +953,7 @@ color: var(--secondaryText);
 /* footer */
 
 .footerSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
     max-width: 100%;
     padding: 60px 0px;
    
@@ -986,7 +961,7 @@ color: var(--secondaryText);
 .footer{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     gap: 30px;
    
 }
