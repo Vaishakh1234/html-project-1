@@ -25,6 +25,13 @@
 body{
     color: var(--textColor);
     background-color: var(--bgColor);
+    scroll-behavior: smooth;
+}
+li,a,img,p,h2,h1,i,h1,h3,h4,h5,h6{
+
+    animation: fade linear forwards;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%    ;
 }
 .container{
     max-width: 1000px;
@@ -33,6 +40,7 @@ body{
    
     
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -41,7 +49,7 @@ a{
 li{
     list-style: none;
 }
-button{
+button,i{
     cursor: pointer;
 }
 
@@ -486,6 +494,11 @@ color: var(--secondaryText);
     max-width: 230px;
     display: flex;
     flex-direction: column;
+    transition: all .4s ease-in;
+}
+
+.courseCard:hover{
+    transform: scale(1.05 );
 }
 .coursesImgBox{
   width: 100%;
@@ -551,7 +564,7 @@ color: var(--secondaryText);
     display: flex;
     gap: 18px;
     flex-direction: column;
-    padding: 30px 16px;
+    padding: 30px 1px;
     align-items: start;
 }
 .coursesContentBox .contentOne{
@@ -676,6 +689,10 @@ color: var(--secondaryText);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding: 60px ;
     position: relative;
+    transition: .3s all ease;
+}
+.pricingCard:hover{
+  transform: scale(1.06);
 }
 .pricingCard .newTag{
     background-color: var(--underlineColor);
@@ -856,6 +873,10 @@ color: var(--secondaryText);
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    transition: all .5s ease-in;
+}
+.reviewProfile img:hover{
+   transform: rotatey(360deg);
 }
 .reviewCaption{
 max-width: 320px;
@@ -992,10 +1013,12 @@ display: block;
     display: flex;
     justify-content: start;
     gap: 18px;
-    color: var(--primaryColor);
     margin: 13px 0px;
     margin-top: 22px;
 
+}
+.footerIcons .footerIcon{
+      color: var(--primaryColor)
 }
 .subFooter{
     padding: 28px;
@@ -1014,7 +1037,18 @@ word-spacing: 3px;
 
 
 
+/* scroll animation */
 
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+}
+
+/* /scroll animation */
 
 /* animatio for  button in the about sesction */
 
